@@ -1,3 +1,14 @@
+/***** GENERAL *****/
+
+.content {
+    border: 5px solid #55b96b;
+    color: #000;
+    float: left;
+    padding: 20px 49px;
+    text-align: justify;
+    width: 100%;
+}
+
 .logo {
     float: left;
     margin-right: 25px;
@@ -23,17 +34,38 @@
     width: 16.6667%;
 }
 
-.login{
+.login {
     background-color: #55B96B;
 }
 
-.signup{
+.signup {
     background-color: #5fc5d8;
 }
 
-.content {
-    border: 5px solid #55b96b;
-    color: #000;
-    padding: 20px 49px;
-    text-align: justify;
+
+
+
+/***** PROFILE *****/
+#general-info img {
+    float: left;
+    margin-right: 40px;
+    position: relative;
+}
+
+.weight-circle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+}
+
+.input-data {
+    float: left;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
 }
