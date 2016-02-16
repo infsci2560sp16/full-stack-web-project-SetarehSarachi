@@ -69,3 +69,15 @@
     position: relative;
     width: 100%;
 }
+/****** SIGNUP******/
+.old-user{
+float:right;
+}
+
+.old-user button{
+margin-left:10px;
+}
+/******  EDIT ******/
+.form-group.col-xs-1 {
+    margin-right: 10px;
+}
