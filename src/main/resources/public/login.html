@@ -2,20 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Contact</title>
+<title>Login</title>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/MyCss.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 
 <body>
+
 <script src="js/SignUp.js">
 </script>
 <div class="container">
   <div class="jumbotron">
-  <img class="img-responsive logo" src="image/FitBuddyLogo.png" width="85" height="345" alt="Logo Image" />
+  <img class="img-responsive logo" src="image/FitBuddyLogo.png" width="85" height="345" alt="Profile Image"/>
     <h1>Fit Buddy</h1>
     <p>Monitor and Control your Activity and Food </p> 
     <a href="login.html"><div class="col-sm-2-header login scaleB">Log In</div></a>
@@ -35,7 +36,7 @@
       <ul class="nav navbar-nav">
         <li><a href="index.html">About Us</a></li>
         <li><a href="#">Fit Blog</a></li>
-        <li class="active"><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
 
     </div>
@@ -44,22 +45,34 @@
   </div>
   
   <div class="row">
+  
     <div class="col-xs-pull-11 content">
-      <h3>Contact Us</h3>
-      <div class="col-sm-7">
-<div id="googleMap" style="width:600px;height:300px;"></div></div>
-<div style="margin-left:10px;" class="col-sm-4">
-<p>We love hearing from our users. Don't be shy - send us your thoughts!</p>
-Address: 135 N Bellefield Ave, Pittsburgh, PA 15260
-<br>
-Email: setareh.sarachi@pitt.edu
-<br>
-Phone: (412) 719 -2757
+    <h3>Login</h3>
+        <form class="form-horizontal signup-form" name="LoginForm" onsubmit="return validateLoginFormOnSubmit();">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="username">Username:</label>
+      <div class="col-sm-4">          
+        <input class="form-control" placeholder="Enter Username" id="username" name="username"><span id='err_username'></span>
+      </div>
+    </div>
+        <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd"><span id='err_password'></span>
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Login</button>
+      
+      </div>
+    </div>
+  </form>
 </div>
+
     </div>
   </div>
-</div>
-<div class="panel-footer">All Rights Reserved for Setareh :D #DoNotCopy</div>
-</body>
+<div class="panel-footer">All Rights Reserved for Setareh :D #DoNotCopy</div></body>
 
 </html> 

@@ -12,13 +12,15 @@
 
 <body>
 
+<script src="js/SignUp.js">
+</script>
 <div class="container">
   <div class="jumbotron">
   <img class="img-responsive logo" src="image/FitBuddyLogo.png" width="85" height="345" alt="Profile Image"/>
     <h1>Fit Buddy</h1>
     <p>Monitor and Control your Activity and Food </p> 
-    <div class="col-sm-2-header login">Login</div>
-    <div class="col-sm-2-header signup">Sign up</div>
+    <a href="login.html"><div class="col-sm-2-header login scaleB">Log In</div></a>
+    <a href="SignUp.html"><div class="col-sm-2-header signup spinR">Sign up</div></a>
   </div>
   <div id="top-menu">
   <nav class="navbar navbar-inverse">
@@ -32,9 +34,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">About us</a></li>
+        <li><a href="index.html">About Us</a></li>
         <li><a href="#">Fit Blog</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
 
     </div>
@@ -45,47 +47,48 @@
   <div class="row">
   
     <div class="col-xs-pull-11 content">
-    <h3>Sign up</h3>
-    <div class="old-user"> already a user? <button type="submit" class="btn btn-default">Login</button></div>
-    <form class="form-horizontal" role="form">
+    <h3>Sign Up</h3>
+    <div class="old-user"> Already a Fit Buddy?<form style="display: inline" action="login.html" method="get"><button type="submit" class="btn btn-default">Log In</button></form>
+    </div>
+    <form class="form-horizontal signup-form" name="signUpForm" onsubmit="return validateSignUpFormOnSubmit;">
     <div class="form-group">
-      <label class="control-label col-sm-2">User name:</label>
+      <label class="control-label col-sm-2" for="username">Username:</label>
       <div class="col-sm-4">          
-        <input class="form-control" placeholder="Enter User Name">
+        <input class="form-control" placeholder="Enter Username" id="username" name="username"><span id='err_username'></span>
       </div>
     </div>
         <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
+      <label class="control-label col-sm-2" for="emailId">Email:</label> 
       <div class="col-sm-4">
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <input class="form-control"  placeholder="Enter Email" id="emailId" name="emailId"><span id='err_email'></span>
       </div>
     </div>
         <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Password:</label>
       <div class="col-sm-4">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd"><span id='err_password'></span>
       </div>
       
     </div>
         <div class="form-group">
-      <label class="control-label col-sm-2">Confirm Password:</label>
+      <label class="control-label col-sm-2" for="confirmpwd">Confirm Password:</label>
       <div class="col-sm-4">          
-        <input class="form-control" placeholder="Enter password">
+        <input type="password" class="form-control" placeholder="Confirm password" id="confirmpwd" name="confirmpwd"><span id='err_confirmPassword'></span>
       </div>
       
     </div>
-    <hr>
+    
         <div class="form-group">
-      <label class="control-label col-sm-2">First Name:</label>
+      <label class="control-label col-sm-2" for="firstname">First Name:</label>
       <div class="col-sm-4">          
-        <input class="form-control" placeholder="Enter First Name">
+        <input class="form-control" placeholder="Enter First Name" id="firstname" name="firstname" ><span id='err_firstname'></span>
       </div>
       
     </div>
         <div class="form-group">
-      <label class="control-label col-sm-2">Last Name:</label>
+      <label class="control-label col-sm-2" for="lastname">Last Name:</label>
       <div class="col-sm-4">          
-        <input class="form-control" placeholder="Enter Last Name">
+        <input class="form-control" placeholder="Enter Last Name" id="lastname" name="lastname"><span id='err_lastname'></span>
       </div>
       
     </div>
@@ -100,58 +103,133 @@
         <option>2</option>
         <option>3</option>
         <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
       </select>
       </div>
-              <div class="form-group col-xs-1"">
-      <label class="control-label" for="sel1">Month:</label>
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+              <div class="form-group col-xs-2">
+      <label class="control-label" for="sel2">Month:</label>
+      <select class="form-control" id="sel2">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
       </select>
       </div>
-              <div class="form-group col-xs-1"">
-      <label class="control-label" for="sel1">Year:</label>
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+              <div class="form-group col-xs-2">
+      <label class="control-label" for="sel3">Year:</label>
+      <select class="form-control" id="sel3">
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>1999</option>
+        <option>1998</option>
+        <option>1997</option>
+        <option>1996</option>
+        <option>1995</option>
+        <option>1994</option>
+        <option>1993</option>
+        <option>1992</option>
+        <option>1991</option>
+        <option>1990</option>
+        <option>1989</option>
+        <option>1988</option>
+        <option>1987</option>
+        <option>1986</option>
+        <option>1985</option>
+        <option>1984</option>
+        <option>1983</option>
+        <option>1982</option>
+        <option>1981</option>
+        <option>1980</option>
+        <option>1979</option>
+        <option>1978</option>
+        <option>1977</option>
+        <option>1976</option>
+        <option>1975</option>
+        <option>1974</option>
+        <option>1973</option>
+        <option>1972</option>
+        <option>1971</option>
+        <option>1970</option>
+        <option>1969</option>
+        <option>1968</option>
+        <option>1967</option>
+
       </select>
       </div>
       </div>
       
       <hr>
               <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Height:</label>
-      <div class="col-sm-1">          
-        <input class="form-control"placeholder="Height">
+      <label class="control-label col-sm-2" for="height">Height:</label>
+      <div class="col-sm-2">          
+        <input class="form-control" placeholder="Height" id="height">
       </div>
     </div>
         <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Weight:</label>
-      <div class="col-sm-1">          
-        <input class="form-control" placeholder="Weight">
+      <label class="control-label col-sm-2" for="weight">Weight:</label>
+      <div class="col-sm-2">          
+        <input class="form-control" placeholder="Weight" id="weight">
       </div>
-      
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-          <label><input type="checkbox"> Remember me</label>
-        </div>
-      </div>
+
     </div>
+
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-default">Register</button>
       </div>
     </div>
-  </form></div>
+  </form>
+</div>
 
     </div>
   </div>
-</div>
+<div class="panel-footer">All Rights Reserved for Setareh :D #DoNotCopy</div>
 </body>
 
 </html> 

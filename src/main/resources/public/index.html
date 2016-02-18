@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Fit Buddy</title>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+   <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:300,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/MyCss.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -16,8 +31,8 @@
   <img class="img-responsive logo" src="image/FitBuddyLogo.png" width="85" height="345" alt="Logo Image" />
     <h1>Fit Buddy</h1>
     <p>Monitor and Control your Activity and Food </p> 
-    <div class="col-sm-2-header login">Login</div>
-    <div class="col-sm-2-header signup">Sign up</div>
+    <a href="login.html"><div class="col-sm-2-header login scaleB">Log In</div></a>
+    <a href="SignUp.html"><div class="col-sm-2-header signup spinR">Sign up</div></a>
   </div>
   <div id="top-menu">
   <nav class="navbar navbar-inverse">
@@ -31,9 +46,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#">About Us</a></li>
         <li><a href="#">Fit Blog</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
 
     </div>
@@ -42,13 +57,14 @@
   </div>
   
   <div class="row">
-    <div class="col-xs-pull-11 content">
-      <h3>About us</h3>
-     <!-- <p>Beshin fek kon inja chi benevisim</p> -->
-      Fit Buddy is a personalized web application, which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, acitivities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan.
+    <div class="col-xs-pull-11 content" style="background-image:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('image/main-back.jpg'); background-size: cover; background-attachment: fixed;">
+      <h3>About Us</h3>
+     
+      Fit Buddy is a personalized web application, in which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, activities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan.
     </div>
   </div>
 </div>
+<div class="panel-footer">All Rights Reserved for Setareh :D #DoNotCopy</div>
 </body>
 
 </html> 

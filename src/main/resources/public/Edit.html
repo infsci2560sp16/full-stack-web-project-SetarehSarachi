@@ -1,6 +1,7 @@
-<html><head>
+<!DOCTYPE html>
+<head>
 <meta charset="UTF-8">
-<title>Profile</title>
+<title>Edit Profile</title>
   <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
   <link href="stylesheets/MyCss.css" rel="stylesheet">
 
@@ -15,8 +16,8 @@
   <img width="85" height="345" alt="Profile Image" src="image/FitBuddyLogo.png" class="img-responsive logo">
     <h1>Fit Buddy</h1>
     <p>Monitor and Control your Activity and Food </p> 
-    <div class="col-sm-2-header login">Login</div>
-    <div class="col-sm-2-header signup">Sign up</div>
+    <a href="login.html"><div class="col-sm-2-header login scaleB">Log In</div></a>
+    <a href="SignUp.html"><div class="col-sm-2-header signup spinR">Sign up</div></a>
   </div>
   <div id="top-menu">
   <nav class="navbar navbar-inverse">
@@ -30,9 +31,9 @@
     </div>
     <div id="myNavbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">About us</a></li>
+        <li><a href="index.html">About Us</a></li>
         <li><a href="#">Fit Blog</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
 
     </div>
@@ -46,7 +47,7 @@
     <h3>Edit Profile</h3>
  
     
-        <img width="130" height="130" alt="ProfilePic" class="img-circle col-sm-2" src="image/seth.jpg"> <form role="form" class="form-horizontal col-sm-10">
+        <img width="130" height="130" alt="ProfilePic" class="img-circle col-sm-2" src="image/seth.jpg"> <form class="form-horizontal col-sm-10 editP-form"><!--role="form" removed from form-->
     <div class="form-group">
       <label class="control-label col-sm-2">User name:</label>
       <div class="col-sm-4">          
@@ -73,7 +74,7 @@
       </div>
       
     </div>
-    <hr>
+    
         <div class="form-group">
       <label class="control-label col-sm-2">First Name:</label>
       <div class="col-sm-4">          
@@ -101,22 +102,73 @@
         <option>4</option>
       </select>
       </div>
-              <div "="" class="form-group col-xs-1">
-      <label for="sel1" class="control-label">Month:</label>
-      <select id="sel1" class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+              <div class="form-group col-xs-2">
+      <label for="sel2" class="control-label">Month:</label>
+      <select id="sel2" class="form-control">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
       </select>
       </div>
-              <div "="" class="form-group col-xs-1">
-      <label for="sel1" class="control-label">Year:</label>
-      <select id="sel1" class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+              <div  class="form-group col-xs-2">
+      <label for="sel3" class="control-label">Year:</label>
+      <select id="sel3" class="form-control">
+<option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>1999</option>
+        <option>1998</option>
+        <option>1997</option>
+        <option>1996</option>
+        <option>1995</option>
+        <option>1994</option>
+        <option>1993</option>
+        <option>1992</option>
+        <option>1991</option>
+        <option>1990</option>
+        <option>1989</option>
+        <option>1988</option>
+        <option>1987</option>
+        <option>1986</option>
+        <option>1985</option>
+        <option>1984</option>
+        <option>1983</option>
+        <option>1982</option>
+        <option>1981</option>
+        <option>1980</option>
+        <option>1979</option>
+        <option>1978</option>
+        <option>1977</option>
+        <option>1976</option>
+        <option>1975</option>
+        <option>1974</option>
+        <option>1973</option>
+        <option>1972</option>
+        <option>1971</option>
+        <option>1970</option>
+        <option>1969</option>
+        <option>1968</option>
+        <option>1967</option>
       </select>
       </div>
       </div>
@@ -124,7 +176,7 @@
       <hr>
         <div class="form-group">
       <label for="pwd" class="control-label col-sm-2">Weight:</label>
-      <div class="col-sm-1">          
+      <div class="col-sm-2">          
         <input placeholder="Weight" class="form-control">
       </div>
       
@@ -144,5 +196,5 @@
   </div>
 </div>
 
-
+<div class="panel-footer">All Rights Reserved for Setareh :D #DoNotCopy</div>
  </body></html>
