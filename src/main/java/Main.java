@@ -40,8 +40,8 @@ public class Main {
       return "E=mc^2: " + energy + " = " + m.toString();
     });*/
 
-
-    get("/", (request, response) -> {
+ 
+   get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
