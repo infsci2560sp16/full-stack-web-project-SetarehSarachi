@@ -36,14 +36,14 @@ public class Main {
           return "E=mc^2: 12 GeV = " + m.toString();
         });
 
- /*get("/", (request, response) -> {
+ get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
-
+            attributes.put("blogTitle", "TEST");
+            attributes.put("message", "FitBuddy is a personalized web application, in which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, activities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan");
             return new ModelAndView(attributes, "index.ftl");
-        }, new FreeMarkerEngine());*/
+        }, new FreeMarkerEngine());
 
-    try{
+   /* try{
           Configuration cfg = new Configuration(); 
           cfg.setDefaultEncoding("UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
@@ -51,7 +51,7 @@ public class Main {
             map.put("blogTitle", "TEST");
             map.put("message", "FitBuddy is a personalized web application, in which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, activities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan");
             cfg.setDirectoryForTemplateLoading(new File("/Users/setaresarachi/full-stack-web-project-SetarehSarachi/src/main/resources/public"));
-            Template template = cfg.getTemplate("test.ftl");
+            Template template = cfg.getTemplate("index.ftl");
             Writer out = new OutputStreamWriter(System.out);
             template.process(map, out);
     }
@@ -61,7 +61,7 @@ public class Main {
         }catch (TemplateException e) {
             e.printStackTrace();
     }
-    
+    */
  
   
 
