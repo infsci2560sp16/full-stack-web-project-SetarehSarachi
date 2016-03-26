@@ -41,7 +41,7 @@ public class Main {
           cfg.setDefaultEncoding("UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
             Map<String, Object> map = new HashMap<>();
-            map.put("blogTitle", "FitBuddy");
+            map.put("blogTitle", "TEST");
             map.put("message", "FitBuddy is a personalized web application, in which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, activities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan");
             cfg.setDirectoryForTemplateLoading(new File("/Users/setaresarachi/full-stack-web-project-SetarehSarachi/src/main/resources/public"));
             Template template = cfg.getTemplate("test.ftl");
