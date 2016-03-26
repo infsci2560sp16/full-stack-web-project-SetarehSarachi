@@ -36,13 +36,13 @@ public class Main {
           return "E=mc^2: 12 GeV = " + m.toString();
         });
 
- get("/", (request, response) -> {
+ /*get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
             return new ModelAndView(attributes, "index.ftl");
-        }, new FreeMarkerEngine());
- 
+        }, new FreeMarkerEngine());*/
+
     try{
           Configuration cfg = new Configuration(); 
           cfg.setDefaultEncoding("UTF-8");
