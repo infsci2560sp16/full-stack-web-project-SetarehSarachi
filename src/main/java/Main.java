@@ -38,7 +38,7 @@ public class Main {
 
  get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("blogTitle", "TEST");
+            attributes.put("blogTitle", "FitBuddy");
             attributes.put("message", "FitBuddy is a personalized web application, in which users are going to be able to create account and interact with on a daily basis. Each day, the user is going to enter his/hers calorie intake, activities, the type and time, and their sleep into the system. Therefore, they can keep track of their health status. This information is specifically useful for the trainers. They can keep track of their clients and based on these information, the trainers can give the clients a personalized excercise and diet plan");
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
