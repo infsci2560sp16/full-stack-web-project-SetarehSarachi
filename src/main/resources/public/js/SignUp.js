@@ -18,6 +18,9 @@ function validateLoginFormOnSubmit(){
 }
 //Sign up form validation
 function validateSignUpFormOnSubmit() {
+    $.get('/hello', function( data) {
+        alert("SALAM");
+    });
     document.getElementById("err_username").innerHTML ="";
     document.getElementById("err_email").innerHTML ="";
     document.getElementById("err_password").innerHTML ="";
