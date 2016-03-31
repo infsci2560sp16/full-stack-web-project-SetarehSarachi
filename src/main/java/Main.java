@@ -31,9 +31,11 @@ public class Main {
 
     //get("/hello", (req, res) -> "Hello World");
     get("/hello", (req, res) -> {
+    	
           RelativisticModel.select();
           Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
-          return "E=mc^2: 12 GeV = " + m.toString();
+//          return "E=mc^2: 12 GeV = " + m.toString();
+          return request.body;
         });
 
  get("/", (request, response) -> {
