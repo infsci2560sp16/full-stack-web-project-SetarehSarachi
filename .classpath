@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/setaresarachi/Downloads/freemarker-2.3.23/freemarker.jar"/>
+	<classpathentry kind="lib" path="/Users/setaresarachi/Downloads/spark-master/src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/spark-master"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

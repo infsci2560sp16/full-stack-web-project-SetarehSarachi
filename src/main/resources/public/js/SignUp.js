@@ -149,4 +149,23 @@ function addWeight() {
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
+function afsoon(){
+    alert("SALAM");
+}
+
 google.maps.event.addDomListener(window, 'load', initialize);
+
+//Logic Tier
+
+
+
+
+
+
+
+
+
+
+
+
+
