@@ -68,26 +68,33 @@
     <div id="home" class="tab-pane fade in active"><br>
         <p> Add your daily meals : </p>
         <input type="text" id="food" placeholder="e.g. 2 slices of pizza">
-        <input type='button' onclick='addFood()' value='Add Meal'/><br>
+        <input type='button' onclick='addFood()' value='Add Meal'/>
+        <input type='button' onclick='ajaxCallAcceptJSONviaGet()' value='Show all foods'/>
+        <br>
        <br><ol id="foodlist">
         </ol> 
+        <div class="well" id="foodLogList"></div>
     </div>
 
     <div id="menu1" class="tab-pane fade"><br>
         <p> Add your daily excercise : </p>
         <input type="text" id="activity" placeholder="e.g. Les Mills BodyAttack">
-        <input type='button' onclick='addActivity()' value='Add Excercise'/><br>
+        <input type='button' onclick='addActivity()' value='Add Excercise'/>
+        <input type='button' onclick='ajaxCallAcceptJSONviaPost()' value='Show previous Excercise'/>
+        <br>
        <br><ol id="activitylist">
         </ol>
-        
-              
+         <div class="well" id="excerciseList"></div>     
     </div>
     <div id="menu2" class="tab-pane fade"><br>
         <p> How many hours have you slept today ? </p>
         <input type="text" id="sleep" placeholder="e.g. 7 hrs 25 mins">
-        <input type='button' onclick='addSleep()' value='Add Sleep'/><br>
-       <br><ul id="sleeplist">
-        </ul>   
+        <input type='button' onclick='addSleep()' value='Add Sleep'/>
+        <input type='button' onclick='ajaxCallAcceptXML()' value='Show sleep history'/>
+        <br>
+       <br><ol id="sleeplist">
+        </ol>  
+        <div class="well" id="sleepLogList"></div> 
 
          </div>
     <div id="menu3" class="tab-pane fade"><br>

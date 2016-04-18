@@ -7,6 +7,7 @@ import java.io.*;
 import java.util.*;
 import freemarker.template.*;
 
+import controller.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -22,6 +23,11 @@ import javax.measure.quantity.Mass;
 import org.jscience.physics.model.RelativisticModel;
 import org.jscience.physics.amount.Amount;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
+
 public class Main {
 
   public static void main(String[] args) {
@@ -29,13 +35,16 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
+    Object b = new userLog();
+
+
     //get("/hello", (req, res) -> "Hello World");
     get("/hello", (req, res) -> {
     	
           RelativisticModel.select();
-          Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
-        return "E=mc^2: 12 GeV = " + m.toString();
-          //return req.host();
+         // Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+        //return "E=mc^2: 12 GeV = " + m.toString();
+          return req.host();
         });
 
  get("/", (request, response) -> {

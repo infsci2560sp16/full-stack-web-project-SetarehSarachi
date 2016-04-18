@@ -1,3 +1,7 @@
+$.ajaxSetup({
+    contentType: "application/json; charset=utf-8",
+    dataType: "json"
+});
 //Login form validation
 function validateLoginFormOnSubmit(){
     document.getElementById("err_username").innerHTML ="";
@@ -18,9 +22,10 @@ function validateLoginFormOnSubmit(){
 }
 //Sign up form validation
 function validateSignUpFormOnSubmit() {
-    $.get('/hello', function( data) {
-        alert("SALAM");
-    });
+
+    // $.get('/hello', function( data) {
+    //     alert(document.signUpForm.username.value);
+    // });
     document.getElementById("err_username").innerHTML ="";
     document.getElementById("err_email").innerHTML ="";
     document.getElementById("err_password").innerHTML ="";
@@ -101,7 +106,26 @@ function validateSignUpFormOnSubmit() {
         } 
         
         return true;
-        //document.getElementById("signUpForm").onsubmit = validateFormOnSubmit;
+
+        // var obj = $('#signUpForm').serializeJSON();
+        // var send = JSON.stringify(obj);
+        // console.log(send);
+
+        // $.ajax({
+        //     url: 'https://guarded-inlet-8556.herokuapp.com/registration',
+        //     type: "POST",
+        //     datatype: "json",
+        //     data: send,
+        //     error: function(xhr, error) {
+        //            alert('Error!  Status = ' + xhr.status + ' Message = ' + error);
+        //     },
+        //     success: function(data) {
+        //             alert("User added successfully.");
+        //             window.location.href='/inventory-list.html';
+
+        //     }
+        // });//end AJAX 
+
     }
     //Profile- Add Food to the Profile 
 
@@ -160,7 +184,38 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 //Logic Tier
 
+function ajaxCallAcceptJSONviaGet() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("foodLogList").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("GET", "loggedFoods", true);
+    xhttp.send();
+    }
+    
+    function ajaxCallAcceptJSONviaPost() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("excerciseList").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("POST", "loggedExcercise", true);
+    xhttp.send();
+    }
 
+    function ajaxCallAcceptXML() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("sleepLogList").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("GET", "loggedSleep", true);
+    xhttp.send();
+    }
 
 
 
